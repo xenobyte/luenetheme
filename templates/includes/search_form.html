@@ -1,0 +1,11 @@
+{% load mezzanine_tags i18n %}
+<form action="{% url "search" %}" role="search">
+<h4>{% trans "Search" %}</h4>
+
+<div class="hline"></div>
+<p>
+	<br>
+
+    <input class="form-control" placeholder="{% trans "Search" %}" type="text" name="q" value="{{ request.REQUEST.q }}">
+</p>
+</form>
